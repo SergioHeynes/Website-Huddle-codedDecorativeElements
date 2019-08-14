@@ -1,0 +1,32 @@
+.benefits {
+    padding-top: 18rem;
+    padding-bottom: 60rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    
+    &__image {
+        width: 47.5%;
+        margin-right: 10%;
+        
+    }
+
+    &__text-content {
+        flex: 47.5%;
+        padding: 0 2rem;
+    }
+
+    &__block {
+
+    }
+
+    &__title {
+        margin-bottom: 1.8rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 4rem;
+    }
+    
+}

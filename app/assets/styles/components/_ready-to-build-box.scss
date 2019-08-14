@@ -1,0 +1,26 @@
+.ready-to-build-box {
+    box-shadow: .1rem .2rem 1rem #ddd;
+    border-radius: 15px;
+    width: 55%;
+    height: 26rem;
+    text-align: center;
+    background-color: $color-white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-tab-port) {
+        width: 90%;
+    }
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+}

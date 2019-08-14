@@ -1,0 +1,13 @@
+.legal {
+    color: $color-white;
+    position: absolute;
+    right: 8rem;
+    bottom: 8rem;
+
+    @media only screen and (max-width: $bp-tab-port) {
+        position: unset;
+        font-size: 2.2rem;
+
+        align-self: center;
+    }
+}

@@ -1,0 +1,33 @@
+.btn {
+    text-decoration: none;
+    
+
+    &--white, 
+    &--white:visited, 
+    &--white:link {
+        background-color: $color-white;
+        color: $color-violet;
+        padding: 1.8rem 8rem;
+        // box-shadow: .1rem .2rem 1rem #ddd;    
+    }
+
+    &--pink, 
+    &--pink:visited, 
+    &--pink:link {
+        display: inline-block;
+        font-weight: 700;
+        color: $color-white;
+        padding: 1.6rem 5rem;
+        box-shadow: .1rem .2rem 1rem #ddd;
+        background-color: $color-pink;
+        
+        // @media only screen and (max-width: $bp-phone) {
+        //     padding: 1.6rem 12rem;
+        //     font-size: 2rem;
+    }
+
+    &-large {
+        // padding: 2rem 9rem;
+        // font-size: 1.8rem;
+    }
+}

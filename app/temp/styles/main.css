@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  background-color: #F7F9FD; }
+
+.btn {
+  text-decoration: none; }
+  .btn--white, .btn--white:visited, .btn--white:link {
+    background-color: #FFF;
+    color: #9A52FF;
+    padding: 1.8rem 8rem; }
+  .btn--pink, .btn--pink:visited, .btn--pink:link {
+    display: inline-block;
+    font-weight: 700;
+    color: #FFF;
+    padding: 1.6rem 5rem;
+    box-shadow: .1rem .2rem 1rem #ddd;
+    background-color: #FF52BF; }
+
+.wrapper {
+  padding-right: 8rem;
+  padding-left: 8rem; }
+
+.header {
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  text-align: center; }
+  .header::before {
+    content: "";
+    background-image: linear-gradient(to bottom, #FF52BF, #9A52FF);
+    height: 160rem;
+    width: 100rem;
+    border-radius: 12rem;
+    position: absolute;
+    top: -32%;
+    right: 0;
+    left: 56%;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-40deg); }
+  .header::after {
+    content: "";
+    background-color: #FFF;
+    height: 100rem;
+    width: 200rem;
+    border-radius: 12rem;
+    position: absolute;
+    top: 14%;
+    left: 2%;
+    z-index: -2;
+    transform: rotate(-20deg); }
+  .header__try-it-free {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__build-the-community {
+    margin-bottom: 36rem; }
+  .header__build-the-community-illustration {
+    width: 60%;
+    margin-bottom: 8rem; }
+  .header__build-the-community-title {
+    font-weight: 700;
+    margin-bottom: 3.6rem; }
+  .header__build-the-community-paragraph {
+    width: 42%;
+    margin: 0 auto 3.6rem auto; }
+
+.benefits {
+  padding-top: 18rem;
+  padding-bottom: 60rem;
+  display: flex;
+  justify-content: space-between; }
+  .benefits__image {
+    width: 47.5%;
+    margin-right: 10%; }
+  .benefits__text-content {
+    flex: 47.5%;
+    padding: 0 2rem; }
+  .benefits__title {
+    margin-bottom: 1.8rem; }
+  .benefits__paragraph {
+    margin-bottom: 4rem; }
