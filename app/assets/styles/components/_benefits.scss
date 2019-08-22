@@ -1,6 +1,6 @@
 .benefits {
     padding-top: 18rem;
-    padding-bottom: 60rem;
+    padding-bottom: 30rem;
 
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,7 @@
 
     &__paragraph {
         margin-bottom: 4rem;
+        color: $color-grey;
     }
     
 }
