@@ -1,0 +1,18 @@
+.try-it-free {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    max-width: 80rem;
+    margin: 0 auto 26.5rem auto;
+
+    background-color: $color-white;
+    box-shadow: .1rem .2rem 1rem #ddd;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 2.4rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 3.7rem;
+    }
+}
