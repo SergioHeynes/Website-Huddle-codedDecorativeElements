@@ -1,4 +1,9 @@
 .wrapper {
     padding-right: 8rem;
     padding-left: 8rem;
+
+    @media only screen and (max-width: $bp-tab-port) {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
 }

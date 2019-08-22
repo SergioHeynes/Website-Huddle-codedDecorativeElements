@@ -18,6 +18,23 @@
         z-index: -1;
 
         transform: rotate(-40deg);
+
+        @media only screen and (max-width: $bp-tab-land) {
+            left: 65%;
+        }
+
+        @media only screen and (max-width: $bp-tab-port) {
+            height: 160rem;
+            top: -20%;
+            left: 70%;
+
+            transform: rotate(-30deg);
+        }
+
+        @media only screen and (max-width: $bp-phone) {
+            top: -30%;
+            left: 90%;
+        }
     }
 
     &::after {
@@ -32,11 +49,28 @@
         z-index: -2;
 
         transform: rotate(-31deg);
+
+        @media only screen and (max-width: $bp-tab-port) {
+            height: 90rem;
+            top: 5%;
+            left: 2%;
+        }
+
+        @media only screen and (max-width: $bp-phone) {
+            height: 70rem;
+            top: 4%;
+            left: -10%;
+        }
     }
     
     &__try-it-free {
         padding-top: 9rem;
         padding-bottom: 9rem;
+
+        @media only screen and (max-width: $bp-tab-port) {
+            padding-top: 3rem;
+            padding-bottom: 16rem;
+        }
 
         display: flex;
         justify-content: space-between;
@@ -44,16 +78,26 @@
     }
 
     &__try-it-free-logo {
-        
+        @media only screen and (max-width: $bp-phone) {
+            width: 35%;
+        }
     }
 
     &__build-the-community {
         margin-bottom: 36rem;
+
+        @media only screen and (max-width: $bp-tab-port) {
+            margin-bottom: 18rem;
+        }
     }
 
     &__build-the-community-illustration {
         width: 60%;
         margin-bottom: 8rem;   
+
+        @media only screen and (max-width: $bp-tab-port) {
+            width: 80%;
+        }
     }
 
     &__build-the-community-text {
@@ -64,6 +108,12 @@
         font-size: 3.2rem;
         font-weight: 800;
         margin-bottom: 3.2rem;
+
+        @media only screen and (max-width: $bp-phone) {
+            font-size: 4rem;
+            margin-right: 8rem;
+            margin-left: 8rem;
+        }
     }
 
     &__build-the-community-paragraph {
@@ -71,6 +121,11 @@
         margin: 0 auto 3.2rem auto;
         font-size: 2.2rem;
         color: $color-grey;
+
+        @media only screen and (max-width: $bp-phone) {
+            width: 80%;
+            font-size: 3rem;
+        }
     }
 
     &__build-the-community-image {

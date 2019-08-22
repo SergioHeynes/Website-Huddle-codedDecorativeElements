@@ -5,11 +5,23 @@
     display: flex;
     justify-content: space-between;
 
+    @media only screen and (max-width: $bp-phone) {
+        flex-direction: column;
+        
+        text-align: center;
+        padding-bottom: 10rem;
+    }
+
     
     &__image {
         width: 47.5%;
         margin-right: 10%;
         
+        @media only screen and (max-width: $bp-phone) {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10rem;
+        }
     }
 
     &__text-content {
@@ -23,11 +35,19 @@
 
     &__title {
         margin-bottom: 1.8rem;
+
+        @media only screen and (max-width: $bp-phone) {
+            font-size: 4rem;
+        }
     }
 
     &__paragraph {
         margin-bottom: 4rem;
         color: $color-grey;
+
+        @media only screen and (max-width: $bp-phone) {
+            font-size: 2.6rem;
+        }
     }
     
 }

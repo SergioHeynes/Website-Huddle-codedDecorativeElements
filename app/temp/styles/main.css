@@ -37,6 +37,9 @@ body {
     background-color: #FFF;
     color: #9A52FF;
     padding: 1.8rem 8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .btn--white, .btn--white:visited, .btn--white:link {
+        padding: 1rem 4.5rem; } }
   .btn--pink, .btn--pink:visited, .btn--pink:link {
     display: inline-block;
     color: #FFF;
@@ -46,6 +49,10 @@ body {
 .wrapper {
   padding-right: 8rem;
   padding-left: 8rem; }
+  @media only screen and (max-width: 56.25em) {
+    .wrapper {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
 
 .header {
   position: relative;
@@ -65,6 +72,19 @@ body {
     bottom: 0;
     z-index: -1;
     transform: rotate(-40deg); }
+    @media only screen and (max-width: 75em) {
+      .header::before {
+        left: 65%; } }
+    @media only screen and (max-width: 56.25em) {
+      .header::before {
+        height: 160rem;
+        top: -20%;
+        left: 70%;
+        transform: rotate(-30deg); } }
+    @media only screen and (max-width: 37.5em) {
+      .header::before {
+        top: -30%;
+        left: 90%; } }
   .header::after {
     content: "";
     background-color: #FFF;
@@ -76,43 +96,91 @@ body {
     left: 2%;
     z-index: -2;
     transform: rotate(-31deg); }
+    @media only screen and (max-width: 56.25em) {
+      .header::after {
+        height: 90rem;
+        top: 5%;
+        left: 2%; } }
+    @media only screen and (max-width: 37.5em) {
+      .header::after {
+        height: 70rem;
+        top: 4%;
+        left: -10%; } }
   .header__try-it-free {
     padding-top: 9rem;
     padding-bottom: 9rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .header__try-it-free {
+        padding-top: 3rem;
+        padding-bottom: 16rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header__try-it-free-logo {
+      width: 35%; } }
   .header__build-the-community {
     margin-bottom: 36rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__build-the-community {
+        margin-bottom: 18rem; } }
   .header__build-the-community-illustration {
     width: 60%;
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__build-the-community-illustration {
+        width: 80%; } }
   .header__build-the-community-title {
     font-size: 3.2rem;
     font-weight: 800;
     margin-bottom: 3.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__build-the-community-title {
+        font-size: 4rem;
+        margin-right: 8rem;
+        margin-left: 8rem; } }
   .header__build-the-community-paragraph {
     width: 52%;
     margin: 0 auto 3.2rem auto;
     font-size: 2.2rem;
     color: #808D99; }
+    @media only screen and (max-width: 37.5em) {
+      .header__build-the-community-paragraph {
+        width: 80%;
+        font-size: 3rem; } }
 
 .benefits {
   padding-top: 18rem;
   padding-bottom: 30rem;
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .benefits {
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 10rem; } }
   .benefits__image {
     width: 47.5%;
     margin-right: 10%; }
+    @media only screen and (max-width: 37.5em) {
+      .benefits__image {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10rem; } }
   .benefits__text-content {
     flex: 47.5%;
     padding: 0 2rem; }
   .benefits__title {
     margin-bottom: 1.8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .benefits__title {
+        font-size: 4rem; } }
   .benefits__paragraph {
     margin-bottom: 4rem;
     color: #808D99; }
+    @media only screen and (max-width: 37.5em) {
+      .benefits__paragraph {
+        font-size: 2.6rem; } }
 
 .try-it-free {
   padding-top: 9rem;
@@ -121,6 +189,12 @@ body {
   margin: 0 auto 26.5rem auto;
   background-color: #FFF;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .try-it-free {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      width: 90%;
+      margin: 0 auto 13rem auto; } }
   .try-it-free__title {
     font-size: 3.2rem;
     font-weight: 800;
@@ -133,7 +207,7 @@ body {
 .footer {
   background-color: #00252E;
   color: #FFF;
-  padding: 19rem 8rem 7rem 10rem;
+  padding: 8rem 8rem 17rem 10rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
