@@ -19,6 +19,9 @@ body {
   margin: 0 auto;
   background-color: #F7F9FD; }
 
+.util__box-shadow {
+  box-shadow: .1rem .2rem 1rem #ddd; }
+
 .btn {
   text-decoration: none; }
   .btn--white, .btn--white:visited, .btn--white:link {
@@ -27,10 +30,8 @@ body {
     padding: 1.8rem 8rem; }
   .btn--pink, .btn--pink:visited, .btn--pink:link {
     display: inline-block;
-    font-weight: 700;
     color: #FFF;
     padding: 1.6rem 5rem;
-    box-shadow: .1rem .2rem 1rem #ddd;
     background-color: #FF52BF; }
 
 .wrapper {
@@ -106,9 +107,66 @@ body {
   max-width: 80rem;
   margin: 0 auto 26.5rem auto;
   background-color: #FFF;
-  box-shadow: .1rem .2rem 1rem #ddd;
   text-align: center; }
   .try-it-free__title {
-    margin-bottom: 2.4rem; }
+    font-size: 3rem;
+    margin-bottom: 4rem; }
   .try-it-free__paragraph {
     margin-bottom: 3.7rem; }
+
+.footer {
+  background-color: #00252E;
+  color: #FFF;
+  padding: 19rem 8rem 7rem 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .footer__logo-container {
+    flex: 100%;
+    margin-bottom: 3.7rem; }
+  .footer__social-media-container {
+    flex: 20%; }
+  .footer__nav-social-media-list {
+    list-style-type: none;
+    font-size: 3.7rem;
+    margin-bottom: 3.7rem; }
+  .footer__nav-social-media-item {
+    display: inline-block; }
+  .footer__nav-social-media-link {
+    text-decoration: none;
+    color: inherit; }
+  .footer__nav {
+    flex: 20%;
+    margin-left: 8%; }
+  .footer__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .footer__item {
+    display: inline-block;
+    margin-bottom: 3rem;
+    flex: 50%; }
+  .footer__link {
+    text-decoration: none;
+    color: inherit; }
+  .footer__subscribe {
+    flex: 20%;
+    display: flex;
+    flex-direction: column; }
+  .footer__subscribe-title {
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+  .footer__subscribe-paragraph {
+    margin-bottom: 2rem; }
+  .footer__subscribe-input {
+    display: inline-block;
+    font-size: inherit;
+    padding: 1.6rem 5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #FFF;
+    border-radius: 3px; }
+  .footer__subscribe-btn {
+    align-self: flex-end;
+    border-radius: 3px; }

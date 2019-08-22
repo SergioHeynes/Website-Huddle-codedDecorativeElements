@@ -2,14 +2,13 @@
 @import 'base/mixins';
 @import 'base/global';
 
+@import 'components/util';
 @import 'components/btn';
 @import 'components/wrapper';
 @import 'components/header';
 @import 'components/benefits';
 @import 'components/try-it-free';
 
-
-
-// @import 'components/footer';
+@import 'components/footer';
 // @import 'components/legal';
 @import 'components/attribution';

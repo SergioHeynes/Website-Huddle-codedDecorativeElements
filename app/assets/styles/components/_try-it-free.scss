@@ -5,11 +5,11 @@
     margin: 0 auto 26.5rem auto;
 
     background-color: $color-white;
-    box-shadow: .1rem .2rem 1rem #ddd;
     text-align: center;
 
     &__title {
-        margin-bottom: 2.4rem;
+        font-size: 3rem;
+        margin-bottom: 4rem;
     }
 
     &__paragraph {
