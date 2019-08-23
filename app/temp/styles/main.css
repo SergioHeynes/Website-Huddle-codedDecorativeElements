@@ -212,6 +212,7 @@ body {
   background-color: #00252E;
   color: #FFF;
   padding: 8rem 8rem 17rem 10rem;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -219,66 +220,101 @@ body {
   @media only screen and (max-width: 56.25em) {
     .footer {
       flex-direction: column;
-      align-items: center; } }
+      align-items: flex-start; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 8rem 3rem 17rem 3rem; } }
   .footer__logo-container {
     flex: 100%;
     margin-bottom: 3.7rem; }
     @media only screen and (max-width: 56.25em) {
       .footer__logo-container {
-        flex: 1; } }
-    @media only screen and (max-width: 56.25em) {
+        order: 1;
+        align-self: center; } }
+    @media only screen and (max-width: 37.5em) {
       .footer__logo-container {
-        order: 1; } }
+        text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer__logo {
+      width: 60%;
+      margin-bottom: 4rem; } }
   .footer__social-media-container {
-    flex: 20%; }
+    flex: 1; }
     @media only screen and (max-width: 56.25em) {
       .footer__social-media-container {
         order: 4; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__social-media-container {
+        align-self: center;
+        text-align: center; } }
   .footer__nav-social-media-list {
     list-style-type: none;
     font-size: 3.7rem;
     margin-bottom: 3.7rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__nav-social-media-list {
+        font-size: 6rem; } }
   .footer__nav-social-media-item {
     display: inline-block; }
+    .footer__nav-social-media-item:not(:last-child) {
+      margin-right: 2rem; }
   .footer__nav-social-media-link {
     text-decoration: none;
     color: inherit; }
   .footer__nav {
-    flex: 20%;
-    margin-left: 8%; }
+    flex: 1;
+    margin-left: 5%; }
     @media only screen and (max-width: 75em) {
       .footer__nav {
         margin-left: 3%; } }
     @media only screen and (max-width: 56.25em) {
       .footer__nav {
-        order: 2; } }
+        flex: 1;
+        order: 3; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__nav {
+        margin-bottom: 4rem; } }
   .footer__list {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__list {
+        display: block;
+        font-size: 2.8rem; } }
   .footer__item {
     display: inline-block;
     margin-bottom: 3rem;
     flex: 50%; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .footer__item {
-        flex: 30%; } }
+        display: block; } }
   .footer__link {
     text-decoration: none;
     color: inherit; }
   .footer__subscribe {
-    flex: 20%;
+    flex: 1;
     display: flex;
     flex-direction: column; }
     @media only screen and (max-width: 56.25em) {
       .footer__subscribe {
         order: 3; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__subscribe {
+        margin-bottom: 8rem;
+        text-align: center; } }
   .footer__subscribe-title {
     text-transform: uppercase;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__subscribe-title {
+        font-size: 3.3rem; } }
   .footer__subscribe-paragraph {
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__subscribe-paragraph {
+        font-size: 2.8rem; } }
   .footer__subscribe-input {
     display: inline-block;
     font-size: inherit;
@@ -286,6 +322,30 @@ body {
     margin-bottom: 2rem;
     border: 1px solid #FFF;
     border-radius: 3px; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__subscribe-input {
+        font-size: 2.8rem; } }
   .footer__subscribe-btn {
     align-self: flex-end;
     border-radius: 3px; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__subscribe-btn {
+        align-self: stretch;
+        text-align: center;
+        font-size: 2.8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer__legal {
+      font-size: 2.2rem; } }
+  .footer__attribution {
+    font-size: 1.1rem;
+    margin: 1.1rem 0 1.1rem 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media only screen and (max-width: 37.5em) {
+      .footer__attribution {
+        font-size: 1.9rem; } }
+    .footer__attribution a {
+      color: #FF52BF; }
