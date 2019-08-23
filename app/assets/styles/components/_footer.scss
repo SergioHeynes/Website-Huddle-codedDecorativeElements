@@ -8,10 +8,24 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @media only screen and (max-width: $bp-tab-port) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     // FLEX ITEM 1
     &__logo-container {
         flex: 100%;
         margin-bottom: 3.7rem;
+
+        @media only screen and (max-width: $bp-tab-port) {
+            flex: 1;
+        }
+
+        @media only screen and (max-width: $bp-tab-port) {
+            order: 1;
+        }
     }
 
     &__logo {
@@ -22,6 +36,10 @@
     //FLEX ITEM 2
     &__social-media-container {
         flex: 20%;
+
+        @media only screen and (max-width: $bp-tab-port) {
+            order: 4;
+        }
     }
 
     &__nav-social-media-list {
@@ -45,6 +63,16 @@
         flex: 20%;
 
         margin-left: 8%;
+
+        @media only screen and (max-width: $bp-tab-land) {
+            margin-left: 3%;
+        }
+
+        @media only screen and (max-width: $bp-tab-port) {
+            
+            order: 2;
+
+        }
     }
 
     &__list {
@@ -60,6 +88,10 @@
         margin-bottom: 3rem;
 
         flex: 50%;
+        
+        @media only screen and (max-width: $bp-tab-port) {
+            flex: 30%;
+        }
     }
 
     &__link {
@@ -74,6 +106,10 @@
 
         display: flex;
         flex-direction: column;
+
+        @media only screen and (max-width: $bp-tab-port) {
+            order: 3;
+        }
     }
 
     &__subscribe-title {

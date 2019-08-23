@@ -154,19 +154,23 @@ body {
   padding-bottom: 30rem;
   display: flex;
   justify-content: space-between; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .benefits {
       flex-direction: column;
       text-align: center;
       padding-bottom: 10rem; } }
   .benefits__image {
     width: 47.5%;
-    margin-right: 10%; }
-    @media only screen and (max-width: 37.5em) {
+    margin-right: 10%;
+    align-self: center; }
+    @media only screen and (max-width: 56.25em) {
       .benefits__image {
-        width: 100%;
+        width: 75%;
         margin: 0;
         margin-bottom: 10rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .benefits__image {
+        width: 100%; } }
   .benefits__text-content {
     flex: 47.5%;
     padding: 0 2rem; }
@@ -212,11 +216,24 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      flex-direction: column;
+      align-items: center; } }
   .footer__logo-container {
     flex: 100%;
     margin-bottom: 3.7rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo-container {
+        flex: 1; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo-container {
+        order: 1; } }
   .footer__social-media-container {
     flex: 20%; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__social-media-container {
+        order: 4; } }
   .footer__nav-social-media-list {
     list-style-type: none;
     font-size: 3.7rem;
@@ -229,6 +246,12 @@ body {
   .footer__nav {
     flex: 20%;
     margin-left: 8%; }
+    @media only screen and (max-width: 75em) {
+      .footer__nav {
+        margin-left: 3%; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__nav {
+        order: 2; } }
   .footer__list {
     list-style-type: none;
     display: flex;
@@ -238,6 +261,9 @@ body {
     display: inline-block;
     margin-bottom: 3rem;
     flex: 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__item {
+        flex: 30%; } }
   .footer__link {
     text-decoration: none;
     color: inherit; }
@@ -245,6 +271,9 @@ body {
     flex: 20%;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__subscribe {
+        order: 3; } }
   .footer__subscribe-title {
     text-transform: uppercase;
     margin-bottom: 3rem; }
